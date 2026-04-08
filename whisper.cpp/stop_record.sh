@@ -8,7 +8,7 @@ LARGE_MODEL="./models/ggml-large-v3.bin"
 AUDIO_FILE="recording.wav"
 OLLAMA="/usr/local/bin/ollama"
 
-USE_LLM=true
+USE_LLM=false
 USE_LARGE=false
 
 # ===== STOP RECORDING =====
@@ -65,3 +65,5 @@ osascript -e 'tell application "System Events" to keystroke "v" using command do
 
 rm -f $AUDIO_FILE
 
+# ===== OUTPUT FOR LUA =====
+echo "$FINAL"
